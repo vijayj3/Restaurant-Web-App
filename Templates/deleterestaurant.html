@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Delete Restaurant</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename = 'styles.css')}}">
+</head>
+
+<body>
+    <div>
+        <h1>Are you sure you want to delete <i>{{restaurant.name}}</i></h1>
+        <h2>and the <i>{{count}}</i>{% if count == 1 %} menu item {% else %} menu items {% endif %} it has? </h2>
+        <br>
+        <form action="{{url_for('deleteRestaurant',restaurant_id  = restaurant.id)}}" method="POST">
+            <input type="submit" value="Delete">
+            <a href="{{url_for('restaurantsList')}}">Cancel</a>
+        </form>
+    </div>
+</body>
+
+</html>
