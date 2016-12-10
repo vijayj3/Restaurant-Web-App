@@ -1,6 +1,7 @@
 # Restaurant Web App
 This is a restaurant web app which enables a user to create restaurants and also create menus for each of them. Its built on
 [flask](http://flask.pocoo.org/) and [sqlalchemy](http://www.sqlalchemy.org/) using sqlite. It performs the basic CRUD operations.
+  
 ![photo1](https://github.com/vijayj3/Restaurant-Web-App/blob/master/restaurant%20catalogue.png)
 
 ### Usage
